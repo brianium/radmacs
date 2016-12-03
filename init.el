@@ -23,6 +23,7 @@
     clojure-mode
     clojure-mode-extra-font-locking
     cider
+    dash
     company
     multiple-cursors
     neotree))
