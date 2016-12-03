@@ -11,9 +11,6 @@
 
 (package-initialize)
 
-;; Adds an emacs vendor directory for manually placing .el files
-(add-to-list 'load-path "~/.emacs.d/vendor")
-
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
@@ -27,12 +24,6 @@
     clojure-mode-extra-font-locking
     cider
     company
-		dash
-		epl
-		pkg-info
-		queue
-		seq
-		spinner
     multiple-cursors
     neotree))
 
@@ -43,6 +34,9 @@
 
 ;; Adds /usr/local/bin to exec path so terminal can find my executables
 (setq exec-path (append exec-path '("/usr/local/bin")))
+
+;; Adds an emacs vendor directory for manually placing .el files
+(add-to-list 'load-path "~/.emacs.d/vendor")
 
 ;;;;
 ;; Customization
