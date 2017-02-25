@@ -26,7 +26,8 @@
     dash
     company
     multiple-cursors
-    neotree))
+    neotree
+		ace-window))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -50,7 +51,9 @@
 (load "ui.el")
 (load "editing.el")
 (load "clojure.el")
+(load "parens.el")
 (load "files.el")
+(load "windows.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

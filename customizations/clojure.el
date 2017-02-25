@@ -21,11 +21,3 @@
 ;; clojure indenting - prevents "crazy" indenting
 (setq clojure-defun-style-default-indent t)
 (setq clojure-indent-style :always-indent)
-
-
-;;;;
-;; Paredit integration
-;;;;
-
-(add-hook 'clojure-mode-hook #'paredit-mode)
-(add-hook 'cider-repl-mode-hook #'paredit-mode)
