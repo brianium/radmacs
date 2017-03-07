@@ -27,7 +27,8 @@
     company
     multiple-cursors
     neotree
-		ace-window))
+    ace-window
+    markdown-mode))
 
 ;; Get all the packages!
 (dolist (p my-packages)
