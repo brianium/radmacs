@@ -14,6 +14,9 @@
 ;; For when the repl has too much stuff in it :(
 (global-set-key (kbd "C-c x") 'cider-repl-clear-buffer)
 
+;; Configure cider eldoc
+(add-hook 'cider-mode-hook #'eldoc-mode)
+
 ;;;;
 ;; Clojure mode
 ;;;;
