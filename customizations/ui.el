@@ -8,7 +8,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; the current theme in use
-(load-theme 'monokai t)
+(load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
