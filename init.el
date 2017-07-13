@@ -4,7 +4,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+	     '("melpa" . "https://melpa.org/packages/") t)
 
 (when (< emacs-major-version 24)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -28,7 +28,8 @@
     multiple-cursors
     neotree
     ace-window
-    markdown-mode))
+    markdown-mode
+    all-the-icons))
 
 ;; Get all the packages!
 (dolist (p my-packages)
