@@ -6,6 +6,10 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/") t)
 
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+
 (when (< emacs-major-version 24)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
@@ -29,7 +33,9 @@
     neotree
     ace-window
     markdown-mode
-    all-the-icons))
+    all-the-icons
+    yasnippet
+    clojure-snippets))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -57,6 +63,7 @@
 (load "files.el")
 (load "windows.el")
 (load "fonts.el")
+(load "snippets.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
