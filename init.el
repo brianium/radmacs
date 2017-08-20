@@ -35,7 +35,9 @@
     markdown-mode
     all-the-icons
     yasnippet
-    clojure-snippets))
+    clojure-snippets
+    web-mode
+    nyan-mode))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -64,6 +66,7 @@
 (load "windows.el")
 (load "fonts.el")
 (load "snippets.el")
+(load "web.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -75,7 +78,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider))))
+    (web-mode dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

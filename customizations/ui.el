@@ -47,3 +47,10 @@
 ;; Line numbers
 ;;;;
 (global-linum-mode 1)
+
+
+;;;;
+;; Lol Nyan
+;;;;
+(require 'nyan-mode)
+(nyan-mode 1)
