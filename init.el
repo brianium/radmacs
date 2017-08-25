@@ -72,6 +72,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cider-cljs-lein-repl
+   "(cemerick.piggieback/cljs-repl (cljs.repl.rhino/repl-env))")
  '(custom-safe-themes
    (quote
     ("68f7a53f5f1a8d30e5cd2d119fe6ecddb081bfe61bc427ca20eefd0abfada488" default)))
