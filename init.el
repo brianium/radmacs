@@ -69,7 +69,7 @@
 (load "fonts.el")
 (load "snippets.el")
 (load "web.el")
-(load "term.el")
+(load "my-term.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
