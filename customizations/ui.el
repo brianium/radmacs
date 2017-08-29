@@ -60,3 +60,8 @@
 ;; Ewwwwww tool bar - disables tool bar
 ;;;;
 (tool-bar-mode -1)
+
+;;;;
+;; Ewwwwww scroll bars - disable scroll bars
+;;;;
+(scroll-bar-mode -1)
