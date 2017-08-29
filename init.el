@@ -37,7 +37,9 @@
     yasnippet
     clojure-snippets
     web-mode
-    nyan-mode))
+    nyan-mode
+    yaml-mode
+    multi-term))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -67,6 +69,7 @@
 (load "fonts.el")
 (load "snippets.el")
 (load "web.el")
+(load "my-term.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -80,7 +83,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (web-mode dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider))))
+    (yaml-mode web-mode dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
