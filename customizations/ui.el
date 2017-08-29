@@ -54,3 +54,9 @@
 ;;;;
 (require 'nyan-mode)
 (nyan-mode 1)
+
+
+;;;;
+;; Ewwwwww tool bar - disables tool bar
+;;;;
+(tool-bar-mode -1)
