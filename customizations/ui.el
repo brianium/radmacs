@@ -65,3 +65,11 @@
 ;; Ewwwwww scroll bars - disable scroll bars
 ;;;;
 (scroll-bar-mode -1)
+
+;;;;
+;; Rainbow Mode
+;;;;
+(define-globalized-minor-mode radmacs-rainbow-mode rainbow-mode
+  (lambda () (rainbow-mode 1)))
+
+(radmacs-rainbow-mode 1)

@@ -9,9 +9,8 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives
+             '("gnu" . "http://elpa.gnu.org/packages/"))
 
 (package-initialize)
 
@@ -39,7 +38,8 @@
     web-mode
     nyan-mode
     yaml-mode
-    multi-term))
+    multi-term
+    rainbow-mode))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -48,6 +48,14 @@
 
 ;; Adds /usr/local/bin to exec path so terminal can find my executables
 (setq exec-path (append exec-path '("/usr/local/bin")))
+
+;; Fix path so .profile is used
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(if window-system (set-exec-path-from-shell-PATH))
 
 ;; Adds an emacs vendor directory for manually placing .el files
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -76,7 +84,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cider-cljs-lein-repl
-   "(cemerick.piggieback/cljs-repl (cljs.repl.rhino/repl-env))")
+   "(do (require 'figwheel-sidecar.repl-api) (figwheel-sidecar.repl-api/start-figwheel!) (figwheel-sidecar.repl-api/cljs-repl))")
  '(custom-safe-themes
    (quote
     ("68f7a53f5f1a8d30e5cd2d119fe6ecddb081bfe61bc427ca20eefd0abfada488" default)))
