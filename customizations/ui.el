@@ -8,7 +8,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; the current theme in use
-(load-theme 'zenburn t)
+(load-theme 'material-light t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -30,7 +30,7 @@
 ;; Fonts
 ;;;;
 
-(set-face-attribute 'default nil :height 190)
+(set-face-attribute 'default nil :height 160)
 
 ;;;;
 ;; Neotree
