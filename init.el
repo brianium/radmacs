@@ -39,7 +39,8 @@
     nyan-mode
     yaml-mode
     multi-term
-    rainbow-mode))
+    rainbow-mode
+    projectile))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -84,14 +85,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cider-cljs-lein-repl
-   "(do (require 'figwheel-sidecar.repl-api) (figwheel-sidecar.repl-api/start-figwheel!) (figwheel-sidecar.repl-api/cljs-repl))")
+   "(do (require 'figwheel-sidecar.repl-api) (figwheel-sidecar.repl-api/start-figwheel!) (figwheel-sidecar.repl-api/cljs-repl))" t)
  '(custom-safe-themes
    (quote
     ("68f7a53f5f1a8d30e5cd2d119fe6ecddb081bfe61bc427ca20eefd0abfada488" default)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (yaml-mode web-mode dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider))))
+    (yaml-mode web-mode dash paredit neotree multiple-cursors company clojure-mode-extra-font-locking cider)))
+ '(safe-local-variable-values
+   (quote
+    ((cider-refresh-after-fn . "integrant.repl/resume")
+     (cider-refresh-before-fn . "integrant.repl/suspend")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

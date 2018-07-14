@@ -9,6 +9,11 @@
            (figwheel-sidecar.repl-api/start-figwheel!)
            (figwheel-sidecar.repl-api/cljs-repl))")
 
+(setq cider-pprint-fn "puget")
+
+;; switch to repl in same window
+(setq cider-repl-display-in-current-window t)
+
 ;; Keyboard shortcuts
 
 ;; For when the repl has too much stuff in it :(
