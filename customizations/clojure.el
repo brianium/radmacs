@@ -30,3 +30,7 @@
 ;; clojure indenting - prevents "crazy" indenting
 (setq clojure-defun-style-default-indent t)
 (setq clojure-indent-style :always-indent)
+
+(define-clojure-indent
+  (-> 0)
+  (->> 0))
