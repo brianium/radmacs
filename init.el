@@ -40,7 +40,8 @@
     yaml-mode
     multi-term
     rainbow-mode
-    projectile))
+    projectile
+    clj-refactor))
 
 ;; Get all the packages!
 (dolist (p my-packages)
