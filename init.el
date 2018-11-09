@@ -81,6 +81,7 @@
 (load "web.el")
 (load "my-term.el")
 (load "projects.el")
+(load "docker.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
