@@ -12,7 +12,7 @@
 (setq cider-pprint-fn "puget")
 
 ;; switch to repl in same window
-(setq cider-repl-display-in-current-window t)
+;; (setq cider-repl-display-in-current-window t)
 
 ;; Keyboard shortcuts
 

@@ -82,6 +82,7 @@
 (load "my-term.el")
 (load "projects.el")
 (load "docker.el")
+(load "markdown.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
