@@ -41,7 +41,11 @@
     multi-term
     rainbow-mode
     projectile
-    clj-refactor))
+    clj-refactor
+    rjsx-mode
+    indium
+    company-tern
+    js2-refactor))
 
 ;; Get all the packages!
 (dolist (p my-packages)

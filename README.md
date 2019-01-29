@@ -16,4 +16,13 @@ This super gnar setup requires some fonts be installed on your system:
 
 ## External Dependencies
 
-The markdown configuration relies on [vmd](https://github.com/yoshuawuyts/vmd) being stalled, so follow instructions there. Basically creates a dependency on node and the package `vmd`. I am ok with this because the markdown preview is sooooo good.
+This rad emacs setup relies on some npm deps for JavaScript development and Markdown previews. I am at peace with this,
+and the functionality provided is worth it.
+
+The latest version of node compatible with the following packages should be installed. NPM dependencies:
+
+* [vmd](https://github.com/yoshuawuyts/vmd)
+* [indium](https://www.npmjs.com/package/indium)
+* [tern](https://www.npmjs.com/package/tern)
+
+These should be installed globally - i.e `npm install -g {package}`

@@ -5,3 +5,4 @@ auto-save-list/*
 eshell/*
 projectile-bookmarks.eld
 url/
+*.md.temp
