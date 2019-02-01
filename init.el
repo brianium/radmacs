@@ -87,6 +87,7 @@
 (load "projects.el")
 (load "docker.el")
 (load "markdown.el")
+(load "dictionary.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
