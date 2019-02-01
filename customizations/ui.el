@@ -38,7 +38,7 @@
 
 (require 'neotree)
 
-(global-set-key [f8] 'neotree-toggle)
+(global-set-key (kbd "C-c C-m") 'neotree-toggle)
 (setq neo-theme (if (display-graphic-p) 'icons))
 (setq neo-autorefresh nil)
 (setq neo-smartopen t)
