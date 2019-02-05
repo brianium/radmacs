@@ -45,7 +45,10 @@
     rjsx-mode
     indium
     company-tern
-    js2-refactor))
+    js2-refactor
+    add-node-modules-path
+    prettier-js
+    emojify))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -88,6 +91,7 @@
 (load "docker.el")
 (load "markdown.el")
 (load "dictionary.el")
+(load "emoji.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
