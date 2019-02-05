@@ -48,7 +48,8 @@
     js2-refactor
     add-node-modules-path
     prettier-js
-    emojify))
+    emojify
+    flycheck))
 
 ;; Get all the packages!
 (dolist (p my-packages)
@@ -92,6 +93,7 @@
 (load "markdown.el")
 (load "dictionary.el")
 (load "emoji.el")
+(load "eslint.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
