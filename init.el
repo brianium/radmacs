@@ -49,7 +49,8 @@
     add-node-modules-path
     prettier-js
     emojify
-    flycheck))
+    flycheck
+    graphql-mode))
 
 ;; Get all the packages!
 (dolist (p my-packages)
