@@ -95,6 +95,7 @@
 (load "dictionary.el")
 (load "emoji.el")
 (load "eslint.el")
+(load "appsync.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
